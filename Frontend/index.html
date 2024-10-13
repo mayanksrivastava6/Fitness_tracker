@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">Fitness Tracker</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Workouts</a></li>
+                <li><a href="#">Meals</a></li>
+                <li><a href="#">Progress</a></li>
+                <li><a href="#">Settings</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Welcome Section -->
+    <section class="welcome">
+        <div class="welcome-cont">
+        <h1>Track Your Fitness Journey!</h1>
+        <button class="start-btn">Start Now</button>
+    </div>
+   
+    </section>
+    <div class="form-progress">
+    <!-- Input Forms Section -->
+    <section class="forms">
+        <div class="form-container">
+            <!-- Workout Form -->
+            <div class="form workout-form">
+                <h2>Log Workout</h2>
+                <form>
+                    <label for="exercise">Exercise Type:</label>
+                    <input type="text" id="exercise" placeholder="E.g., Running">
+                    
+                    <label for="duration">Duration (mins):</label>
+                    <input type="number" id="duration" placeholder="E.g., 30">
+                    
+                    <label for="intensity">Intensity:</label>
+                    <input type="text" id="intensity" placeholder="E.g., Moderate">
+                    
+                    <label for="calories">Calories Burned:</label>
+                    <input type="number" id="calories" placeholder="E.g., 300">
+                    
+                    <button type="submit" class="submit-btn">Log Workout</button>
+                </form>
+            </div>
+
+            <!-- Meal Form -->
+            <div class="form meal-form">
+                <h2>Log Meal</h2>
+                <form>
+                    <label for="meal-type">Meal Type:</label>
+                    <input type="text" id="meal-type" placeholder="E.g., Breakfast">
+                    
+                    <label for="calories-consumed">Calories Consumed:</label>
+                    <input type="number" id="calories-consumed" placeholder="E.g., 500">
+                    
+                    <label for="macros">Macros (Carbs, Protein, Fats):</label>
+                    <input type="text" id="macros" placeholder="E.g., 50g, 20g, 15g">
+                    
+                    <button type="submit" class="submit-btn">Log Meal</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Progress and Statistics Section -->
+    <section class="progress-stats">
+        <h2>Your Fitness Progress</h2>
+        <div class="stats">
+            <div class="stat-card">Total Workouts: <span>0</span></div>
+            <div class="stat-card">Total Calories Burned: <span>0</span></div>
+            <div class="stat-card">Meals Logged: <span>0</span></div>
+        </div>
+        <div class="progress-chart">
+            <h3>Progress Over Time</h3>
+            <div class="progress-bar">
+                <div class="bar" style="width: 0%;"></div>
+            </div>
+        </div>
+    </section>
+</div>
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Fitness Tracker. All rights reserved.</p>
+        <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Help</a></li>
+        </ul>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

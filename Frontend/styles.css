@@ -1,0 +1,286 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #161515;
+  color: #00FF00;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+/* Header Section */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #00FF00; /* Neon green navbar */
+  padding: 10px 20px;
+  border-bottom: 2px solid #00FF00;
+  position: sticky;
+  top: 0;
+  z-index: 300;
+}
+
+header .logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #000; /* Black text */
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #000; /* Black text */
+  font-weight: bold;
+}
+
+header nav ul li a:hover {
+ text-decoration: underline;
+}
+
+
+.welcome {
+  height: 600px;
+  text-align:center; 
+  background-image: url(/Web_06/frontend/images/pngtree-black-and-white-gym-room.jpg);
+  background-size: cover;
+  
+}
+.welcome-cont{
+  position: relative;
+  top: 30%;
+}
+.welcome  h1 {
+  
+  color:  #ffff;
+  font-size :55px;
+  font-weight: bolder;
+}
+
+.start-btn {
+  background-color: #000;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  color: #ffff;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.start-btn:hover {
+  background-color: #05fa05;
+  color: #000;
+}
+
+.form-progress{
+  background-image: url(/Web_06/frontend/images/black-dark-gray-abstract-cement-260nw-1924284146.webp);
+  background-size: cover;
+}
+.forms {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  
+}
+
+.form-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.form {
+  background-color: #111;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+}
+
+.form h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.form label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  background-color: #222;
+  border: 1px solid #00FF00;
+  color: #00FF00;
+  border-radius: 5px;
+}
+
+.submit-btn {
+  background-color: #00FF00;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #000;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.submit-btn:hover {
+  background-color: #00cc00;
+}
+
+/* Progress & Stats Section */
+.progress-stats {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.stat-card {
+  background-color: #111;
+  padding: 20px;
+  border-radius: 10px;
+  width: 200px;
+  font-size: 18px;
+}
+
+.stat-card span {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.progress-chart {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.progress-bar {
+  background-color: #222;
+  border: 1px solid #00FF00;
+  height: 20px;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+}
+
+.progress-bar .bar {
+  background-color: #00FF00;
+  height: 100%;
+  border-radius: 5px;
+}
+
+/* Footer Section */
+footer {
+  text-align: center;
+  background-color: #0a0a0a;
+  padding: 20px;
+  border-top: 2px solid #00FF00;
+}
+
+footer p {
+  margin: 10px 0;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: #00FF00;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 1024px) {
+  header nav ul {
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  .stats {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .form-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .form {
+      width: 100%;
+      max-width: 350px;
+  }
+}
+
+@media (max-width: 768px) {
+  .welcome h1 {
+      font-size: 32px;
+  }
+
+  .start-btn {
+      font-size: 16px;
+  }
+
+  .form {
+      width: 90%;
+  }
+
+  .progress-chart {
+      width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+      flex-direction: column;
+      align-items: center;
+      padding: 15px;
+  }
+
+  .welcome h1 {
+      font-size: 28px;
+  }
+
+  .start-btn {
+      font-size: 14px;
+      padding: 10px 20px;
+  }
+
+  .stats {
+      flex-direction: column;
+  }
+
+  .form {
+      width: 100%;
+      max-width: 300px;
+  }
+
+  .progress-bar {
+      height: 15px;
+  }
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Fitness Tracker</title>
+    <link rel="stylesheet" href="login-register.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">Fitness Tracker</div>
+    <nav>
+        <ul>
+            
+            <li><a href="login.html">Login</a></li>
+            <li><a href="register.html">Register</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="auth-container">
+    <div class="form">
+        <h2>Register</h2>
+        <form action="/register" method="post">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit" class="submit-btn">Register</button>
+        </form>
+        <p class="auth-link">Already have an account? <a href="login.html">Login here</a></p>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 Fitness Tracker. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
